@@ -96,9 +96,9 @@ NLP_Capstone_News/
 
 ### 1. Clone the repository
 
-git clone https://github.com/Harsha69420/your-repo-name.git
+git clone https://github.com/Harsha69420/nlp-news-analysis.git
 
-cd your-repo-name
+cd nlp-news-analysis
 
 
 ---
