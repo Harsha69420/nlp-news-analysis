@@ -68,8 +68,12 @@ The system is designed to:
 
 ## 📥 Dataset
 
-The dataset can be downloaded from Kaggle:
+The dataset used in this project is not included due to its large size.
+
+You can download it from Kaggle:
 News_Category_Dataset_v3.json
+
+Place it inside a `data/` folder before running the project.
 
 ---
 
