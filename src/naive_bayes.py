@@ -94,3 +94,21 @@ print(classification_report(y_test, y_pred))
 
 print("\nConfusion Matrix:\n")
 print(confusion_matrix(y_test, y_pred))
+
+
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import confusion_matrix
+
+# Use the data directly from your output
+categories = ['POLITICS', 'SPORTS', 'TECH']
+cm = [[86, 12, 6], [4, 78, 4], [11, 9, 90]]
+
+plt.figure(figsize=(10, 7))
+sns.heatmap(cm, annot=True, fmt='d', cmap='YlGnBu', 
+            xticklabels=categories, yticklabels=categories)
+plt.title('Naive Bayes Confusion Matrix: Accuracy 85%', fontsize=15)
+plt.xlabel('Predicted Category', fontsize=12)
+plt.ylabel('Actual Category', fontsize=12)
+plt.show()
