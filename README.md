@@ -1,3 +1,4 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue)
 # 📰 NLP-Based News Analysis, Classification and Information Retrieval System
 
 ## 📌 Overview
@@ -164,6 +165,19 @@ python src/naive_bayes.py
 python src/ir_system.py
 
 ---
+
+## 📸 Sample Output
+
+### 🔹 Classification Result
+Accuracy: 0.84
+
+### 🔹 Search Query
+Query: cricket match
+
+Top Results:
+1. Can Caribbean Cricket Get Its Groove Back?
+2. Vatican Cricket Team May Need Some Intervention
+3. Kate Middleton Plays Cricket In High Heels
 
 ## 📊 Sample Results
 
