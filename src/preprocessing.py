@@ -36,3 +36,20 @@ print("Processed sample:", processed_data[0])
 with open('output/processed.txt', 'w') as f:
     for sent in processed_data:
         f.write(" ".join(sent) + "\n")
+
+
+
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+# Combine your processed samples into a string
+text = "4 million americans roll sleeves covid boosters cricket match vatican politics tech sports"
+
+wordcloud = WordCloud(width=800, height=400, background_color='white', 
+                      colormap='plasma').generate(text)
+
+plt.figure(figsize=(12, 6))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
+plt.title('Most Frequent Terms in News Dataset', fontsize=16)
+plt.show()
