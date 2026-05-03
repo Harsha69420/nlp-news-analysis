@@ -77,3 +77,25 @@ print("\nTop Results:\n")
 
 for i, (doc, score) in enumerate(results):
     print(f"{i+1}. {doc} (Score: {score:.4f})")
+
+
+
+
+import matplotlib.pyplot as plt
+
+# Your query results
+headlines = [
+    "Can Caribbean Cricket Get Its Groove Back?",
+    "Vatican Cricket Team",
+    "Kate Middleton Plays Cricket",
+    "Bloody Cricket Bat Found",
+    "Jimmy Fallon Eats A Cricket"
+]
+scores = [0.2969, 0.2409, 0.2307, 0.2163, 0.2078]
+
+plt.figure(figsize=(10, 6))
+plt.barh(headlines[::-1], scores[::-1], color='skyblue')
+plt.title('Search Relevance for Query: "cricket match"', fontsize=14)
+plt.xlabel('Similarity Score', fontsize=12)
+plt.tight_layout()
+plt.show()
